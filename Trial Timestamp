@@ -1,0 +1,37 @@
+/*
+
+*/
+
+int ledPin1 = 13
+int ledPin2=12
+int ledPin3= 11
+int ledPin4= 10
+
+void setup() {
+    
+}
+
+void loop() {
+    serial.print("Time: ");
+    time=mills();
+    
+    light1= digitalRead(ledPin1)
+    if (light1==HIGH) {
+      Serial.print(light1,time);
+    }
+    
+    light2= digitalRead(ledPin2)
+    if (light2==HIGH) {
+      Serial.print(light2,time);
+    }
+    
+    light3= digitalRead(ledPin3)
+    if (light3==HIGH) {
+      Serial.print(light3,time);
+    }
+    
+    light4= digitalRead(ledPin4)
+    if (light4==HIGH) {
+      Serial.print(light4,time);
+    }
+}
